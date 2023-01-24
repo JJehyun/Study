@@ -1,10 +1,8 @@
-import {NavigationProp, useNavigation} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-export type RootStackParamList = {
-  Login: undefined;
-  Main: undefined;
+export type RootTabParamList = {
+  Search: undefined;
+  home: undefined;
 };
-export type NavigationProps = NavigationProp<RootStackParamList>;
 
-export const Stack = createNativeStackNavigator<RootStackParamList>();
+export const Tab = createBottomTabNavigator<RootTabParamList>();
